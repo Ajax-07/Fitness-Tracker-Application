@@ -1,0 +1,36 @@
+export const data = {
+  totalCaloriesBurnt: 4200,
+  totalWorkouts: 5,
+  avgCaloriesBurntPerWorkout: 730,
+  totalWeeksCaloriesBurnt: {
+    weeks: [
+      "17th",
+      "18th",
+      "19th",
+      "20th",
+      "21st",
+      "22nd",
+      "23rd",
+      "24th",
+      "25th",
+    ],
+    caloriesBurnt: [1035, 805, 950, 1050, 1250, 118, 550, 450, 1100],
+  },
+  pieChartData: [
+    { id: 0, value: 1400, label: "Legs" },
+    { id: 1, value: 2300, label: "Back" },
+    { id: 2, value: 2000, label: "Chest" },
+    { id: 3, value: 1700, label: "Shoulders" },
+    { id: 4, value: 1500, label: "Arms" },
+    { id: 5, value: 1000, label: "Abs" },
+  ],
+  barChartData: [
+    { id: 0, value: 2000, label: "Monday" },
+    { id: 1, value: 1800, label: "Tuesday" },
+    { id: 2, value: 1600, label: "Wednesday" },
+    { id: 3, value: 1400, label: "Thursday" },
+    { id: 4, value: 1200, label: "Friday" },
+    { id: 5, value: 1000, label: "Saturday" },
+    { id: 6, value: 800, label: "Sunday" },
+  ],
+};
