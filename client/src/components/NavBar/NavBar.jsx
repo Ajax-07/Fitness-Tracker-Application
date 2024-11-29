@@ -36,8 +36,8 @@ export default function NavBar() {
             <Navlink to="/" onClick={CloseMenu}>Dashboard</Navlink>
             <Navlink to="/workout" onClick={CloseMenu}>Workout</Navlink>
             <Navlink to="/service" onClick={CloseMenu}>Service</Navlink>
+            <Navlink to="/goals" onClick={CloseMenu}>Goals</Navlink>
             <Navlink to="/about" onClick={CloseMenu}>About</Navlink>
-            <Navlink to="/contact" onClick={CloseMenu}>Contact</Navlink>
           </MobileMenu>
         </MenuContainer>
         <NavIcon to="/">
@@ -48,8 +48,8 @@ export default function NavBar() {
           <Navlink to="/">Dashboard</Navlink>
           <Navlink to="/workout">Workout</Navlink>
           <Navlink to="/service">Service</Navlink>
+          <Navlink to="/goals">Goals</Navlink>
           <Navlink to="/about">About</Navlink>
-          <Navlink to="/contact">Contact</Navlink>
         </NavItems>
         <UserContainer>
           <SearchIcon sx={sx} />

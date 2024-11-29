@@ -1,12 +1,14 @@
 import { ThemeProvider, styled } from "styled-components";
 import { DarkTheme } from "../../utils/Theme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Authentication from "../../pages/Authentication/Authentication";
-// import { useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Dashboard from "../../pages/Dashboard/Dashboard.jsx";
-import Service from "../../pages/Workout/Workout.jsx";
 import Workout from "../../pages/Workout/Workout";
+import Service from "../../pages/Service/Service";
+import Goals from "../../pages/Goals/Goals";
+import About from "../../pages/About/About";
 
 const Container = styled.div`
   width: 100%;
@@ -21,18 +23,20 @@ const Container = styled.div`
 `;
 
 function App() {
-  // const [user, setuser] = useState(false);
+  const [user, setuser] = useState(false);
 
   return (
     <ThemeProvider theme={DarkTheme}>
       <BrowserRouter>
-        {true ? (
+        {!user ? (
           <Container>
             <NavBar />
             <Routes>
               <Route path="/" exact element={<Dashboard />} />
               <Route path="/workout" exact element={<Workout />} />
               <Route path="/service" exact element={<Service />} />
+              <Route path="/goals" exact element={<Goals/>} />
+              <Route path="/about" exact element={<About/>} />
             </Routes>
           </Container>
         ) : (
